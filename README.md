@@ -1,1 +1,1 @@
-# template-service
+# marko-service
