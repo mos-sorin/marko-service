@@ -1,0 +1,26 @@
+{
+  "name": "marko-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "bunyan": "^1.5.1",
+    "jsonschema": "^1.0.2",
+    "marko": "^2.7.28",
+    "restify": "^4.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mos-sorin/marko-service.git"
+  },
+  "author": "Sorin Baba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mos-sorin/marko-service/issues"
+  },
+  "homepage": "https://github.com/mos-sorin/marko-service#readme"
+}

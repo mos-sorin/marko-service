@@ -1,0 +1,1 @@
+{"data":{"name":"sorin","colors":["a","b","c"]},"template":"Hello ${data.name}! <ul if=\"notEmpty(data.colors)\"> <li for=\"color in data.colors\">${color}</li></ul><div else>No colors!</div>"}
