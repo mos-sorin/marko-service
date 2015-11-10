@@ -2,16 +2,26 @@
   "name": "marko-service",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "./index.js",
   "dependencies": {
-    "bunyan": "^1.5.1",
-    "jsonschema": "^1.0.2",
-    "marko": "^2.7.28",
-    "restify": "^4.0.3"
+    "is-my-json-valid": "^2.12.3",
+    "marko": "^2.7.28"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-test": "^0.12.7",
+    "grunt-nsp-package": "0.0.5",
+    "gulp-nsp": "^2.1.0",
+    "mocha": "^2.3.3",
+    "should": "^7.1.1",
+    "supertest": "^1.1.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
