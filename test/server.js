@@ -147,6 +147,20 @@ describe('The marko APIs', function () {
     });
   });
 
+  it('handles utf-8 text', function(done) {
+    api.post('/marko/render.json')
+    .set('Content-Type', 'application/json')
+    .send('{"fields": {"name": "foobar 薝薢蟌 Grüße"}, "template": "hello ${data.name}!"}')
+    .expect(200)
+    .expect('Content-Type', /json/)
+    .end(function(err, res) {
+      if (err) return done(err);
+      res.body.should.not.have.property('errors');
+      res.body.should.have.property('result').equal('hello foobar 薝薢蟌 Grüße!');
+      done();
+    });
+  });
+
   it('returns 404 if non-post method', function(done) {
     api.get('/marko/render.json')
     .set('Content-Type', 'application/json')
